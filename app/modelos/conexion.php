@@ -1,11 +1,9 @@
 <?php
 
-class Conexion{
+class conexion {
 
     static public function conectar(){
-        $link = new PDO("mysql:host=localhost:3306;dbname=nicetarde_db","root","1312");
-        $link->exec("set names utf8");
+        $link = new PDO("mysql:host=localhost;3307;dhname=nicetarde_db","","root");
         return $link;
-
     }
 }
